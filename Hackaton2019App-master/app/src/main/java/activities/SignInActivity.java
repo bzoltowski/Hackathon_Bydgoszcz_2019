@@ -32,7 +32,10 @@ public class SignInActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i = new Intent(SignInActivity.this, MainActivity.class);
 
+
+                CreateActivity.autoryzacja.putString("user","NICK_Z_BAZY");
                 startActivity(i);
+
             }
         });
 

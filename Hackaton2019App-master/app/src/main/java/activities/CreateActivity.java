@@ -30,6 +30,7 @@ public class CreateActivity extends Activity
     private static final int CAMERA_REQUEST = 1888;
     private ImageView imageView;
     private static final int MY_CAMERA_PERMISSION_CODE = 100;
+    public static Bundle autoryzacja = new Bundle();
 
     @Override
     public void onCreate(Bundle savedInstanceState)
@@ -50,6 +51,8 @@ public class CreateActivity extends Activity
                 }
                 else
                 {
+
+
                     Intent cameraIntent = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
                     startActivityForResult(cameraIntent, CAMERA_REQUEST);
                 }
@@ -70,6 +73,7 @@ public class CreateActivity extends Activity
         }
 
 
+        Toast.makeText(getApplicationContext(), autoryzacja.getString("user"), Toast.LENGTH_LONG).show();
 
     }
 
