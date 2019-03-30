@@ -1,6 +1,4 @@
-//MainActivity
-##########################################
-
+package com.example.tmp_hack;
 
 import android.content.ContentResolver;
 import android.content.Context;
@@ -125,25 +123,3 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-##########################################
-
-//Manifest
-
-##########################################
-
-<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-<uses-permission android:name="android.permission.INTERNET" />
-<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
